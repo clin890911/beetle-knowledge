@@ -6,4 +6,4 @@ COPY . .
 RUN npm run build
 
 FROM docker.io/zeabur/caddy-static:latest
-COPY --from=build /src/dist /var/www/html
+COPY --from=build /src/dist /usr/share/caddy
