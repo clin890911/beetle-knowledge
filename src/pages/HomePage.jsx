@@ -40,6 +40,15 @@ export default function HomePage() {
           >
             🚀 Google 登入開始學習
           </motion.button>
+          <Link to="/encyclopedia">
+            <motion.button
+              className="btn-secondary text-lg px-8 py-4 mt-4 block w-full"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              📚 甲蟲小百科
+            </motion.button>
+          </Link>
         </motion.div>
       </div>
     );
@@ -102,6 +111,29 @@ export default function HomePage() {
               <div>
                 <h3 className="text-2xl font-bold mb-1">🎮 開始測驗</h3>
                 <p className="text-white/70">隨機出題，挑戰你的甲蟲知識！</p>
+              </div>
+              <span className="text-4xl">→</span>
+            </div>
+          </motion.div>
+        </Link>
+      </motion.div>
+
+      {/* Encyclopedia */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.15 }}
+      >
+        <Link to="/encyclopedia">
+          <motion.div
+            className="card mb-8 bg-gradient-to-r from-blue-600 to-purple-800 border-blue-400 cursor-pointer"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            <div className="flex items-center justify-between">
+              <div>
+                <h3 className="text-2xl font-bold mb-1">📚 甲蟲小百科</h3>
+                <p className="text-white/70">系統性認識獨角仙、鍬形蟲、金龜子的完整知識</p>
               </div>
               <span className="text-4xl">→</span>
             </div>

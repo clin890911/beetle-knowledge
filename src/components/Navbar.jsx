@@ -46,6 +46,7 @@ export default function Navbar() {
             {/* Navigation Links */}
             <div className="flex items-center gap-2">
               <Link to="/quiz" className="text-sm hover:text-beetle-400 transition px-2 py-1">測驗</Link>
+              <Link to="/encyclopedia" className="text-sm hover:text-beetle-400 transition px-2 py-1">百科</Link>
               <Link to="/leaderboard" className="text-sm hover:text-beetle-400 transition px-2 py-1">排行榜</Link>
               <Link to="/achievements" className="text-sm hover:text-beetle-400 transition px-2 py-1">成就</Link>
               <Link to="/profile" className="text-sm hover:text-beetle-400 transition px-2 py-1">個人</Link>
