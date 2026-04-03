@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-beetle-900 via-beetle-800 to-bark-900 min-h-screen text-white;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-beetle-500 hover:bg-beetle-600 text-white font-bold py-3 px-6 rounded-xl transition-all duration-200 transform hover:scale-105 active:scale-95 shadow-lg;
+  }
+  .btn-secondary {
+    @apply bg-bark-600 hover:bg-bark-700 text-white font-bold py-3 px-6 rounded-xl transition-all duration-200;
+  }
+  .card {
+    @apply bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20 shadow-xl;
+  }
+  .option-btn {
+    @apply w-full text-left p-4 rounded-xl border-2 border-white/20 bg-white/5 hover:bg-white/15 hover:border-beetle-400 transition-all duration-200 cursor-pointer;
+  }
+  .option-btn.selected {
+    @apply border-beetle-400 bg-beetle-500/20;
+  }
+  .option-btn.correct {
+    @apply border-green-400 bg-green-500/20;
+  }
+  .option-btn.wrong {
+    @apply border-red-400 bg-red-500/20;
+  }
+}
